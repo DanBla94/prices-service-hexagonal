@@ -1,4 +1,4 @@
-package com.store.prices.prices_service;
+package com.store.prices;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
