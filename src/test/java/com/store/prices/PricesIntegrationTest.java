@@ -22,7 +22,7 @@ class PricesIntegrationTest {
     private static final String BRAND_ID = "1";
 
     @Test
-    @DisplayName("Test 1: Petición a las 10:00 del día 14 del producto 35455 para la brand 1")
+    @DisplayName("Test 1: Request at 10:00 on the 14th for product 35455 and brand 1")
     void test1() throws Exception {
         mockMvc.perform(get("/prices")
                 .param("applicationDate", "2020-06-14T10:00:00Z")
@@ -34,7 +34,7 @@ class PricesIntegrationTest {
     }
 
     @Test
-    @DisplayName("Test 2: Petición a las 16:00 del día 14 del producto 35455 para la brand 1")
+    @DisplayName("Test 2: Request at 16:00 on the 14th for product 35455 and brand 1")
     void test2() throws Exception {
         mockMvc.perform(get("/prices")
                 .param("applicationDate", "2020-06-14T16:00:00Z")
@@ -46,7 +46,7 @@ class PricesIntegrationTest {
     }
 
     @Test
-    @DisplayName("Test 3: Petición a las 21:00 del día 14 del producto 35455 para la brand 1")
+    @DisplayName("Test 3: Request at 21:00 on the 14th for product 35455 and brand 1")
     void test3() throws Exception {
         mockMvc.perform(get("/prices")
                 .param("applicationDate", "2020-06-14T21:00:00Z")
@@ -58,7 +58,7 @@ class PricesIntegrationTest {
     }
 
     @Test
-    @DisplayName("Test 4: Petición a las 10:00 del día 15 del producto 35455 para la brand 1")
+    @DisplayName("Test 4: Request at 10:00 on the 15th for product 35455 and brand 1")
     void test4() throws Exception {
         mockMvc.perform(get("/prices")
                 .param("applicationDate", "2020-06-15T10:00:00Z")
@@ -70,7 +70,7 @@ class PricesIntegrationTest {
     }
 
     @Test
-    @DisplayName("Test 5: Petición a las 21:00 del día 16 del producto 35455 para la brand 1")
+    @DisplayName("Test 5: Request at 21:00 on the 16th for product 35455 and brand 1")
     void test5() throws Exception {
         mockMvc.perform(get("/prices")
                 .param("applicationDate", "2020-06-16T21:00:00Z")

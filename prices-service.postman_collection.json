@@ -1,0 +1,105 @@
+{
+  "info": {
+    "_postman_id": "prices-service-test",
+    "name": "Prices Service API Tests",
+    "description": "Collection to test the 5 scenarios required by Inditex.",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+  },
+  "item": [
+    {
+      "name": "Test 1: 14th at 10:00 (Price List 1)",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "http://localhost:8080/prices?brandId=1&productId=35455&applicationDate=2020-06-14T10:00:00Z",
+          "protocol": "http",
+          "host": ["localhost"],
+          "port": "8080",
+          "path": ["prices"],
+          "query": [
+            {"key": "brandId", "value": "1"},
+            {"key": "productId", "value": "35455"},
+            {"key": "applicationDate", "value": "2020-06-14T10:00:00Z"}
+          ]
+        }
+      }
+    },
+    {
+      "name": "Test 2: 14th at 16:00 (Price List 2 - Priority)",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "http://localhost:8080/prices?brandId=1&productId=35455&applicationDate=2020-06-14T16:00:00Z",
+          "protocol": "http",
+          "host": ["localhost"],
+          "port": "8080",
+          "path": ["prices"],
+          "query": [
+            {"key": "brandId", "value": "1"},
+            {"key": "productId", "value": "35455"},
+            {"key": "applicationDate", "value": "2020-06-14T16:00:00Z"}
+          ]
+        }
+      }
+    },
+    {
+      "name": "Test 3: 14th at 21:00 (Price List 1)",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "http://localhost:8080/prices?brandId=1&productId=35455&applicationDate=2020-06-14T21:00:00Z",
+          "protocol": "http",
+          "host": ["localhost"],
+          "port": "8080",
+          "path": ["prices"],
+          "query": [
+            {"key": "brandId", "value": "1"},
+            {"key": "productId", "value": "35455"},
+            {"key": "applicationDate", "value": "2020-06-14T21:00:00Z"}
+          ]
+        }
+      }
+    },
+    {
+      "name": "Test 4: 15th at 10:00 (Price List 3)",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "http://localhost:8080/prices?brandId=1&productId=35455&applicationDate=2020-06-15T10:00:00Z",
+          "protocol": "http",
+          "host": ["localhost"],
+          "port": "8080",
+          "path": ["prices"],
+          "query": [
+            {"key": "brandId", "value": "1"},
+            {"key": "productId", "value": "35455"},
+            {"key": "applicationDate", "value": "2020-06-15T10:00:00Z"}
+          ]
+        }
+      }
+    },
+    {
+      "name": "Test 5: 16th at 21:00 (Price List 4)",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "http://localhost:8080/prices?brandId=1&productId=35455&applicationDate=2020-06-16T21:00:00Z",
+          "protocol": "http",
+          "host": ["localhost"],
+          "port": "8080",
+          "path": ["prices"],
+          "query": [
+            {"key": "brandId", "value": "1"},
+            {"key": "productId", "value": "35455"},
+            {"key": "applicationDate", "value": "2020-06-16T21:00:00Z"}
+          ]
+        }
+      }
+    }
+  ]
+}
