@@ -2,7 +2,7 @@
   "info": {
     "_postman_id": "prices-service-test",
     "name": "Prices Service API Tests",
-    "description": "Collection to test the 5 scenarios required by Inditex.",
+    "description": "Collection to test the 5 scenarios required.",
     "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
   },
   "item": [
